@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# Sources :
-# https://fr.wikipedia.org/wiki/Algorithme_de_Hopcroft-Karp
-
-
 global INF
 global NIL
 

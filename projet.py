@@ -83,21 +83,17 @@ def dfs(pairV, pairU, G, dist, u):
     return True
 
 
+
+
+def test(G, name):
+    print("Résultat du graphe", name, ":", hopcroft(G))
+    
+
 Gsujet = [[],[7,8],[7,9],[10,11,12],[8],[7,10],[12],[1,2,5],[1,4],[2],[3,5],[3],[3,6]] #Graphe du sujet
 Gfalse = [[],[7,8],[7,9],[10,11,12],[8],[7,10],[7],[1,2,5,6],[1,4],[2],[3,5],[3],[3]] #Graphe du sujet modifié pour qu'il soit faux
 Gtest = [[],[2,3],[1,3,4],[1,2],[2]] #Petit graphe de test
 
 
-print(hopcroft(Gsujet))
-print(hopcroft(Gfalse))
-print(hopcroft(Gtest))
-
-
-
-
-
-
-
-
-
-
+test(Gsujet, "Gsujet")
+test(Gfalse, "Gfalse")
+test(Gtest, "Gtest")
